@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+    overflow: hidden;
+    border: 1px solid #e1e8ed;
+}
+
+.form-header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 24px;
+    text-align: center;
+}
+
+.form-header h2 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.form-header p {
+    margin: 0;
+    font-size: 13px;
+    color: #b2bec3;
+}
+
+form {
+    padding: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    background-color: #f8fafc;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+.help-text {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #27ae60;
+}
+
+/* Requadre d'errors de validació */
+.error-summary {
+    background-color: #fdf2f2;
+    border-left: 4px solid #e74c3c;
+    padding: 15px 20px;
+    margin: 15px 28px 0 28px;
+    border-radius: 4px;
+}
+
+.error-summary ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #c0392b;
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari d'Alta de Productes</title>
+    <link rel="stylesheet" href="estils.css">
+    <script src="validacio.js" defer></script>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Gestió d'Inventari</h2>
+            <p>Introdueix les dades per afegir un nou article</p>
+        </div>
+        
+        <div id="error-summary" class="error-summary" style="display: none;"></div>
+        
+        <form id="productForm" action="recibirProducto.php" method="POST">
+            
+            <div class="form-group">
+                <label for="fnombre">Nom del producte <span class="required">*</span></label>
+                <input type="text" id="nombre" name="fnombre" maxlength="20" required placeholder="Ex: Cargol hexagonal">
+                <small class="help-text">Màxim 20 caràcters.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="fdescripcion">Descripció <span class="required">*</span></label>
+                <input type="text" id="descripcion" name="fdescripcion" maxlength="40" required placeholder="Ex: Acer inoxidable de 5mm">
+                <small class="help-text">Màxim 40 caràcters.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="fprecio">Preu (€) <span class="required">*</span></label>
+                <input type="number" id="precio" name="fprecio" step="0.01" min="0.01" required placeholder="0.00">
+            </div>
+
+            <div class="form-group">
+                <label for="fcantidad">Quantitat (Stock) <span class="required">*</span></label>
+                <input type="number" id="cantidad" name="fcantidad" step="1" min="0" required placeholder="0">
+            </div>
+
+            <button type="submit" class="btn-submit">Desar Producte</button>
+        </form>
+    </div>
+
+</body>
+</html>
